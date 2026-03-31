@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Page Title</title>
-</head>
+  <script src="script.js">   </script> 
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>NYC Homeless Shelter Finder</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#search">Find a Shelter</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="about">
+            <h2>About This App</h2>
+            <p>This app helps people find nearby homeless shelters in New York City.</p>
+            <p>Enter your current location or a neighborhood, and the app will display a list of shelters closest to you.</p>
+        </section>
 
+        <section id="search">
+            <h2>Find a Shelter</h2>
+            <form id="shelter-form">
+                <label for="location">Enter Your Location (ZIP Code or Neighborhood):</label>
+                <input type="text" id="location" placeholder="e.g., 10001 or Brooklyn" required>
 
+                <button type="submit">Search Shelters</button>
+            </form>
 
+<<<<<<< HEAD
 <script src="js/script.js" defer></script>
+=======
+            <div id="shelter-list">
+                <h3>Nearby Shelters:</h3>
+                <ul id="shelter-results">
+                </ul>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://www.nyc.gov/html/dhs/html/home/home.shtml" target="_blank">NYC Department of Homeless Services</a></li>
+                <li><a href="https://www.homelessshelterdirectory.org/" target="_blank">Homeless Shelter Directory</a></li>
+                <li><a href="https://www.nyc.gov/site/hra/health/health-home.page" target="_blank">NYC Health & Human Services</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NYC Homeless Shelter Finder. All Rights Reserved.</p>
+    </footer>
+>>>>>>> a5a696157f46411bcfddd168d026eaedcb3d2995
 </body>
+
 </html>
