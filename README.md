@@ -15,7 +15,7 @@ This repository aims to [briefly describe the purpose of the project, e.g., buil
 This capstone, we [briefly explain what the project does, its scope, and its goals]. This project was created as part of my high school capstone project to showcase [mention key skills, e.g., coding, problem-solving, teamwork, etc.].
 
 - **Main Features**: 
-  - Feature 1
+  - Feature 101
   - Feature 2
   - Feature 3
 - **Technologies Used**:
