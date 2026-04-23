@@ -1,7 +1,5 @@
-const MAPBOX_ACCESS_TOKEN = config.MAPBOX_API;
-mapboxgl.accessToken = "";
 
-mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
+mapboxgl.accessToken = config.MAPBOX_API;
 
 const map = new mapboxgl.Map({
 	container: 'map',
