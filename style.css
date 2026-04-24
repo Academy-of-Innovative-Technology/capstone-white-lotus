@@ -11,20 +11,25 @@
 }
 
 
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
 
-
-
-
-
+.shelter-image {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
 }
 
-/* =========================
-   Header
-========================= */
+
 header {
     background-color: #0066cc;
     color: #fff;
@@ -37,7 +42,6 @@ header .logo h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation */
 header nav ul {
     list-style: none;
     display: flex;
@@ -60,9 +64,6 @@ header nav a:hover {
     color: #ffcc00;
 }
 
-/* =========================
-   Layout
-========================= */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -73,9 +74,7 @@ section {
     margin-bottom: 40px;
 }
 
-/* =========================
-   Typography
-========================= */
+
 h2 {
     font-size: 2rem;
     color: #0066cc;
