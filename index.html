@@ -2,55 +2,57 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Homeless Shelter Finder</title>
+
   <link rel="stylesheet" href="style.css" />
+
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" rel="stylesheet">
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+</head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <h1>NYC Homeless Shelter Finder</h1>
-        </div>
-        <nav class="navbar">
-        <ul>
-       <li><a href="About.html">About</a></li>
-        <li><a href="Org.html">Who we are</a></li>
-        <li><a href="index.html">Home</a></li>
-        </ul> 
-        </nav>
-    </header>
+<header>
+  <div class="logo">
+    <h1>NYC Homeless Shelter Finder</h1>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Org.html">Who we are</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul> 
+  </nav>
+</header>
 
-    <main>
-        <section id="about">
-            <h2>About This App</h2>
-            <p>This app helps people find nearby homeless shelters in New York City.</p>
-            <p>Enter your current location or a neighborhood, and the app will display a list of shelters closest to you. </p>
-        </section>
+<main>
+  <section id="about">
+    <h2>About This App</h2>
+    <p>This app helps people find nearby homeless shelters in New York City.</p>
+    <p>Enter your current location or a neighborhood, and the app will display a list of shelters closest to you.</p>
+  </section>
 
-        <section id="search">
-            <h2>Find a Shelter</h2>
-            <form id="shelter-form">
-                <label for="location">Enter Your Location (ZIP Code or Neighborhood):</label>
-                <input type="text" id="location" placeholder="e.g., 10001 or Brooklyn" required>
+  <section id="search">
+    <h2>Find a Shelter</h2>
+    <form id="shelter-form">
+      <label for="location">Enter Your Location:</label>
+      <input type="text" id="location" placeholder="Search location..." required>
+      <button type="submit">Search</button>
+    </form>
+  </section>
 
-                <button type="submit">Search Shelters</button>
+  <div id="geocoder"></div>
 
-                
-            </form>
-            
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MapBox I: Display A Map</title>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
-    <link href="src/css/style.css" rel="stylesheet" type="text/css" />
-
-    
-    <main id="map"></main>
-
+  <div id="map"></div>
+</main>
 
 <script src="env.js"></script>
-<script src="script.js" ></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
