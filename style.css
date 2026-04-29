@@ -7,7 +7,7 @@
 #map {
     width: 900px;
     height: 400px;
-    border: 2px dashed rgb(224, 214, 214);
+    border: 2px dashed rgb(82, 139, 192);
 }
 
 
@@ -54,14 +54,14 @@ header nav li {
 }
 
 header nav a {
-    color: #fff;
+    color: #f4f4f4;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #1a58a0;
+    color: #3772b6;
 }
 
 main {
@@ -125,7 +125,7 @@ h3 {
 }
 
 #search button:hover {
-    background-color: #ffffff;
+    background-color: #4a6c9d;
 }
 
 /* =========================
@@ -196,4 +196,15 @@ body {
   background-attachment: fixed;    
   height: 100vh;                   
   margin: 0;                       
+}
+
+.image-container {
+  display: flex;            
+  justify-content: center;   
+  gap: 10px;                 
+}
+
+.image-container img {
+  width: 500px;              
+  height: auto;
 }
